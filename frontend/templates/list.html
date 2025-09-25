@@ -1,0 +1,19 @@
+<section>
+  <h2>Inventory</h2>
+  <table>
+    <thead>
+      <tr><th>Name</th><th>Quantity</th><th>Price</th><th>Actions</th></tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in items">
+        <td>{{item.name}}</td>
+        <td>{{item.quantity}}</td>
+        <td>{{item.price | currency}}</td>
+        <td>
+          <a href="#/edit/{{item._id}}">Edit</a> |
+          <a href="#/delete/{{item._id}}">Delete</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>

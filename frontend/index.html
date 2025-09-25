@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app="inventoryApp">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventory Frontend (AngularJS)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
+</head>
+<body>
+  <header>
+    <a href="#/">Inventory</a>
+    <a href="#/create">Create Item</a>
+  </header>
+
+  <main ng-view></main>
+
+  <footer>
+    <small>Frontend: AngularJS (1.x) — communicates with backend API at <code>/api</code></small>
+  </footer>
+
+  <!-- AngularJS and ngRoute -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular-route.min.js"></script>
+
+  <!-- App scripts -->
+  <script src="app.js"></script>
+  <script src="services/apiService.js"></script>
+  <script src="controllers/listController.js"></script>
+  <script src="controllers/createController.js"></script>
+  <script src="controllers/editController.js"></script>
+  <script src="controllers/deleteController.js"></script>
+  <script src="controllers/errorController.js"></script>
+</body>
+</html>
